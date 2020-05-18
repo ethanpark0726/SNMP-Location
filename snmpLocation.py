@@ -1,7 +1,6 @@
 import datetime
 import time
 import wexpect
-import pprint
 import getpass
 import openpyxl
 import parse
@@ -163,7 +162,6 @@ if __name__ == '__main__':
         session = accessSwitches(session, elem, username, password)
         data = commandExecute(session, elem[1])
         switch = parse.Parse(data)
-        #switch.getSNMPLocatoin()
         saveExcelFile(switch.getSNMPLocatoin(), elem, cellNumber)
 
         cellNumber += 1
