@@ -22,8 +22,7 @@ class Parse:
             self.result['snmpLocation'] = ' '.join(snmpLocation)
         else:
             self.result['snmpLocation'] = 'Not Set'
-        
-        print(self.result)
+
         return self.result
                 
                 
